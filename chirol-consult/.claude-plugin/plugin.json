@@ -1,0 +1,14 @@
+{
+  "name": "chirol-consult",
+  "version": "0.1.0",
+  "description": "チロル相談窓口。Claude Code から担当者の AI（チロル）に「こういう時どうしたらいい？」と質問でき、回答とお知らせを受け取れる。鍵は各自の ~/.config/consult-mcp/config.json に置く",
+  "author": { "name": "Waggy" },
+  "keywords": ["consult", "mcp"],
+  "mcpServers": {
+    "consult": {
+      "type": "http",
+      "url": "https://consult-mcp.waggy-dev.workers.dev/mcp",
+      "headersHelper": "node \"${CLAUDE_PLUGIN_ROOT}/scripts/auth-headers.mjs\""
+    }
+  }
+}

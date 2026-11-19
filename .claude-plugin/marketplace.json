@@ -1,0 +1,14 @@
+{
+  "name": "chirol",
+  "owner": {
+    "name": "Waggy"
+  },
+  "description": "チロル相談窓口のプラグイン置き場",
+  "plugins": [
+    {
+      "name": "chirol-consult",
+      "source": "./chirol-consult",
+      "description": "チロル相談窓口（質問・回答とお知らせの受け取り）"
+    }
+  ]
+}

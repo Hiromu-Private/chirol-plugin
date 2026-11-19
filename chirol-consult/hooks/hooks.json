@@ -1,0 +1,13 @@
+{
+  "description": "開くたびに、構成の写しを相談窓口へ送り（送る範囲は設定の level）、届いた回答とお知らせを会話に渡す。窓口が止まっていても何も出さず5秒以内に終わる",
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "startup|resume|clear",
+        "hooks": [
+          { "type": "command", "command": "node", "args": ["${CLAUDE_PLUGIN_ROOT}/scripts/consult-hook.mjs"], "timeout": 10 }
+        ]
+      }
+    ]
+  }
+}
